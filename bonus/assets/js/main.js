@@ -11,9 +11,8 @@ var app = new Vue ({
         "./assets/img/avatar_6.jpg",
         "./assets/img/avatar_7.jpg",
         "./assets/img/avatar_8.jpg",
-        "./assets/img/avatar_io.jpg",
-        "./assets/img/avatar_1.jpg",
-        "./assets/img/avatar_2.jpg",
+        "./assets/img/avatar_9.jpg",
+        "./assets/img/avatar_10.jpg",
       ]
     },
     mounted: function () {
