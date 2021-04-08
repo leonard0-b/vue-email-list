@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>E-Mail list - AXIOS</title>
+  <link rel="stylesheet" href="./assets/css/master.css">
+  <title>E-Mail list w Axios</title>
   <!-- VUE js cdn -->
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
   <!-- /VUE js cdn -->
@@ -13,12 +14,13 @@
   <!-- /AXIOS js cdn -->
   <title>Document</title>
 </head>
-<body>
+<body class="flex">
   <div id="root">
-    <button type="button" name="button" @click="getMail">email list</button>
-    <ul>
-      <li v-for="mail in email"> {{ mail }}</li>
-    </ul>
+    <div class="content">
+      <ul id="list">
+        <li v-for="mail in email" v-if="email.length == 10"> {{ mail }} </li>
+      </ul>
+    </div>
   </div>
 
 
