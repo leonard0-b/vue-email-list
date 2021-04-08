@@ -20,6 +20,7 @@
   <div id="root" class="text-align-cent">
     <h1>Mailing List</h1>
     <div class="content flex">
+      <!-- ciclando sia l'item che la i posso associare ogni email a un'immagine, mettendo poi img[i] -->
       <div id="list" v-for="(mail, i) in email" v-if="email.length == 10" class="flex">
         <img :src="img[i]" alt="">
         <p><b> {{ mail }} </b></p>
